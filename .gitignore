@@ -154,8 +154,20 @@ cython_debug/
 
 # Parquets and tests
 parquets/
+data.parquet
 
-#
+# logs
+lightning_logs/
+
+# data subsets and data outputs
+5_fasta
+5_gff
+output/
+tb_logs/
+test_result/
+
+# misc
+unchunked_data.py
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
