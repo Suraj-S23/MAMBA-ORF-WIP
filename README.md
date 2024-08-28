@@ -70,4 +70,3 @@ These metrics are calculated for both all ORFs and small ORFs (<150 bases).
 We acknowledge the support of the Machine Learning Lab, Albert-Ludwigs University, Freiburg, for this research.
 
 Suraj Subramanian
-```
