@@ -17,21 +17,22 @@ This project aims to develop and evaluate machine learning models for predicting
 
 Our project involves developing and comparing different approaches for predicting ORFs in DNA sequences. We are implementing several components:
 
-- A PyTorch-based Mamba model adaptation for archaeal genomes
+- A PyTorch-based Mamba model adaptation for DNA sequences
+- Prediction-head adapted for predicting Open Reading Frames
 - A simple baseline model for comparison purposes
 - Integration with Prodigal for ORF prediction
-- Custom data loading and preprocessing pipelines
-- Evaluation scripts for assessing model performance
+- Custom data loading pipelines for small ORFs
+  
 
-We aim to improve accuracy, especially for smaller ORFs, and explore the generalization for archaeal genomes.
+We aim to train MAMBA SSM to predict ORFs in Bacterial genomes and evalute its generalizing capability to small ORFs (<150 nucleotides) and Archaea genomes. This has not been achieved before, with machine learning models either overfitting to bacterial ORFs or predicting with a lower accuracy for all instances.
 
 
 ## Getting Started
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/orf-prediction.git
-   cd orf-prediction
+   git clone https://github.com/Suraj-S23/ORFHunter.git
+   cd ORFHunter
    ```
 
 2. Install dependencies:
@@ -46,7 +47,7 @@ To run the project locally:
 1. Ensure you have the necessary dependencies installed.
 2. Run the main script:
    ```
-   python mamba_model/archaea_mamba.py --config configs/archaea_config.yaml
+   python mamba_model/mamborf.py --config configs/mamborf_config.yaml
    ```
 
 ## Evaluation Metrics
