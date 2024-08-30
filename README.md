@@ -1,4 +1,4 @@
-# ORF Prediction Project
+# MambORF (Not completed Yet)
 
 This project aims to develop and evaluate machine learning models for predicting Open Reading Frames (ORFs) in DNA sequences, particularly focusing on archaeal genomes.
 
